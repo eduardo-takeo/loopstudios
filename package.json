@@ -1,0 +1,13 @@
+{
+  "name": "loopstudios",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Eduardo Higashi <eduardo.higashi.dev@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "sass": "sass --watch ./style/style.scss ./style/style.css"
+  },
+  "dependencies": {
+    "sass": "^1.32.11"
+  }
+}
