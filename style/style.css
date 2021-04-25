@@ -6,17 +6,73 @@
   box-sizing: border-box;
 }
 
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --dark: hsl(0, 0%, 55%)
+  --darker: hsl(0, 0%, 41%) ;
+}
+
 html {
   font-size: 93.75%;
   font-weight: 400;
   font-family: "Alata", sans-serif;
 }
 
-:root {
-  --white: hsl(0, 0%, 100%);
-  --black: hsl(0, 0%, 0%);
-  --dark: hsl(0, 0%, 55%)
-  --darker: hsl(0, 0%, 41%) ;
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.hero {
+  background-image: url("/images/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.header ul li {
+  display: inline-block;
+  text-decoration: none;
+}
+.header ul li:not(:last-child) {
+  margin-right: 2rem;
+}
+.header ul li a {
+  color: var(--white);
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 87.5%;
+  }
+
+  .content {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 81.25%;
+  }
+
+  .content {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
