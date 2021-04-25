@@ -36,22 +36,33 @@ a {
   background-position: center;
   height: 100vh;
 }
-
-.header {
+.hero .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 2rem 0;
 }
-.header ul li {
+.hero .header ul li {
   display: inline-block;
   text-decoration: none;
 }
-.header ul li:not(:last-child) {
+.hero .header ul li:not(:last-child) {
   margin-right: 2rem;
 }
-.header ul li a {
+.hero .header ul li a {
   color: var(--white);
+}
+.hero-slogan {
+  width: 40rem;
+  padding: 3rem;
+  margin: 15rem 0;
+  border: 2px solid var(--white);
+}
+.hero-slogan h1 {
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 3.5rem;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 @media (max-width: 1080px) {
@@ -60,7 +71,7 @@ a {
   }
 
   .content {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
   }
 }

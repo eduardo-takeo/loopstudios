@@ -35,29 +35,46 @@ a {
   background-size: cover;
   background-position: center;
   height: 100vh;
-}
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem;
-
-  ul {
-    li {
-      display: inline-block;
-      text-decoration: none;
-      
-      &:not(:last-child) {
-        margin-right: 2rem;
-      }
-
-      a {
-        color: var(--white);
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+  
+    ul {
+      li {
+        display: inline-block;
+        text-decoration: none;
+        
+        &:not(:last-child) {
+          margin-right: 2rem;
+        }
+  
+        a {
+          color: var(--white);
+        }
       }
     }
   }
+
+  &-slogan {
+    width: 40rem;
+    padding: 3rem;
+    margin: 15rem 0;
+    border: 2px solid var(--white);
+    
+
+    h1 {
+      text-transform: uppercase;
+      color: var(--white);
+      font-size: 3.5rem;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+  }
 }
+
+
 
 // Media queries
 @media (max-width: 1080px) {
@@ -66,7 +83,7 @@ a {
   }
 
   .content {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
   }
 }
@@ -80,3 +97,5 @@ a {
     margin: 0 auto;
   }
 }
+
+//TODO: Adjust Hero section responsiveness
