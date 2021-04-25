@@ -9,8 +9,8 @@
 :root {
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
-  --dark: hsl(0, 0%, 55%)
-  --darker: hsl(0, 0%, 41%) ;
+  --dark: hsl(0, 0%, 55%);
+  --darker: hsl(0, 0%, 41%);
 }
 
 html {
@@ -63,6 +63,29 @@ a {
   color: var(--white);
   font-size: 3.5rem;
   font-family: "Josefin Sans", sans-serif;
+}
+
+.interactive {
+  margin: 10rem 0;
+}
+.interactive img {
+  width: 50%;
+}
+.interactive-information {
+  position: relative;
+  top: -25rem;
+  left: 45rem;
+  padding: 6rem;
+  width: 40rem;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--dark);
+  border-right: 1px solid var(--dark);
+}
+.interactive-information h1 {
+  font-size: 3rem;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 1080px) {
