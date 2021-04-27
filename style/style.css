@@ -24,6 +24,11 @@ a {
   color: var(--black);
 }
 
+ul,
+li {
+  list-style-type: none;
+}
+
 .content {
   width: 70%;
   margin: 0 auto;
@@ -86,6 +91,65 @@ a {
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
   margin-bottom: 30px;
+}
+
+.creations .creations-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6rem;
+}
+.creations .creations-title h1 {
+  font-size: 3rem;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+}
+.creations .creations-title button {
+  padding: 0.5rem 2rem;
+  text-transform: uppercase;
+  font-family: "Alata", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 4px;
+  background-color: var(--white);
+  border-radius: 2px;
+  border: 2px solid var(--dark);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.creations .creations-title button:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+.creations .creations-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 50px 0px;
+}
+.creations .creations-cards__card {
+  display: flex;
+  align-items: flex-end;
+  width: 20rem;
+  height: 40rem;
+  background: var(--url);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.creations .creations-cards__card:hover {
+  transform: translateY(-1rem);
+  filter: grayscale(80%) drop-shadow(8px 8px 10px var(--darker));
+}
+.creations .creations-cards__card h1 {
+  color: var(--white);
+  font-size: 3rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 30px;
+  width: 40%;
 }
 
 @media (max-width: 1080px) {
