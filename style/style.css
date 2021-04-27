@@ -97,7 +97,6 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 6rem;
 }
 .creations .creations-title h1 {
   font-size: 3rem;
@@ -125,6 +124,7 @@ li {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 50px 0px;
+  margin: 6rem 0;
 }
 .creations .creations-cards__card {
   display: flex;
@@ -150,6 +150,27 @@ li {
   text-transform: uppercase;
   margin: 30px;
   width: 40%;
+}
+
+.footer {
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+}
+.footer a {
+  color: var(--white);
+}
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.footer .footer-content ul li {
+  display: inline-block;
+}
+.footer .footer-content ul li:not(:last-child) {
+  margin-right: 1rem;
 }
 
 @media (max-width: 1080px) {
