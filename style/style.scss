@@ -33,6 +33,50 @@ li {
   margin: 0 auto;
 }
 
+.logo {
+  width: 13rem;
+}
+
+#hamburguer-button {
+  display: none;
+  width: 2.5rem;
+  height: 1.8rem;
+  cursor: pointer;
+}
+
+#close-button {
+  display: none;
+  width: 2.5rem;
+  height: 1.8rem;
+  cursor: pointer;
+}
+
+.menu-active {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  padding: 3rem;
+  background-color: var(--black);
+
+  ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    li {
+      margin: 1rem 0;
+
+      a {
+        color: var(--white);
+        font-size: 2rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
 .hero {
   background-image: url("/images/desktop/image-hero.jpg");
   background-repeat: no-repeat;
@@ -44,6 +88,8 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
     padding: 2rem 0;
 
     ul {
@@ -219,7 +265,23 @@ li {
     margin: 0 auto;
   }
 
+  #hamburguer-button {
+    display: initial;
+  }
+
+  .header-collapsed {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
   .hero {
+    .header {
+      ul {
+        display: none;
+      }
+    }
+
     &-slogan {
       width: 26rem;
       padding: 2rem;
